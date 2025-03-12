@@ -1,0 +1,80 @@
+/* Общие стили для Waybar */
+#waybar {
+  background: rgba(0, 0, 0, 0.8); /* Полупрозрачный черный фон */
+  font-family: "JetBrainsMono", sans-serif;
+  font-size: 14px;
+  color: #00FFFF; /* Голубой цвет текста */
+  padding: 4px 10px;
+}
+
+/* Стили для модулей, если вы хотите, чтобы они реагировали на наведение */
+.module {
+  padding: 2px 6px;
+  margin: 0 2px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.module:hover {
+  background-color: rgba(0, 255, 255, 0.1);
+}
+
+/* Стили для иконок (если задаются через класс .icon) */
+.icon {
+  font-family: "Font Awesome 5 Free", "Font Awesome 6 Free", sans-serif;
+  font-weight: 900; /* Если требуется жирное начертание */
+  color: black;    /* Черный цвет для иконок */
+}
+
+/* Стили для модуля рабочих столов */
+/* Предполагается, что рабочие столы выводятся как элементы с классом .workspace внутри контейнера .workspaces */
+.workspaces {
+  display: flex;
+  gap: 4px;
+}
+.workspace {
+  width: 12px;
+  height: 12px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Ромб */
+  border: 1px solid #00FFFF;
+  background-color: transparent;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+.workspace.active {
+  background-color: #00FFFF;
+  transform: scale(1.1); /* Лёгкое увеличение активного рабочего стола */
+}
+
+/* Стили для модуля яркости */
+#brightness {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#brightness:hover {
+  background-color: rgba(0, 255, 255, 0.1);
+}
+
+/* Стили для модуля звука (например, volume) */
+#volume {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#volume:hover {
+  background-color: rgba(0, 255, 255, 0.1);
+}
+
+/* Пример для модуля CPU */
+#cpu {
+  color: #00FFFF;
+  transition: color 0.3s ease;
+}
+
+/* Пример анимации появления для модулей */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.module {
+  animation: fadeIn 0.5s ease;
+}
