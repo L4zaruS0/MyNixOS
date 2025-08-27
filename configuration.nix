@@ -22,6 +22,9 @@
   #fsType = "vfat";
 #};
 
+#Adding various settings (flakes)
+ nix.settings.experimental-features = [ "nix-command" "flakes" ]; 
+
 #Making superuser (not using sudo and passwords all the time)
 security.sudo = {
   enable = true;
@@ -32,6 +35,7 @@ programs = {
   hyprland.enable = true;
   steam.enable = true;
   git.enable = true;
+  neovim.enable = true;
 };
 environment.sessionVariables.NIXOS_OZONE_WL = "1";
   # Use the systemd-boot EFI boot loader.
@@ -59,9 +63,9 @@ environment.sessionVariables.NIXOS_OZONE_WL = "1";
   # };
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
-  services.xserver.displayManager.sddm.enable = true;
-  
+ # services.xserver.enable = true;
+ # services.xserver.displayManager.sddm.enable = true;
+ 
   environment.etc."wayland-sessions/hyprland.desktop".text = ''
 	[Desktop Entry]
 	Name=Hyprland
@@ -139,7 +143,12 @@ nixpkgs.config.allowUnfree = true;
 	swww
 	htop
 	obs-studio
-	font-awesome	
+	font-awesome
+	virtualbox
+	zoom-us
+	vscode
+	gamescope
+	neovim	
    ];
 #video 
 services.xserver.videoDrivers = ["nvidia"];
@@ -152,18 +161,19 @@ Option "PreferredMode" "2560x1440_144.01"
 EndSection
 '';
 #for old versions
- hardware.opengl.enable = true;
+ #hardware.opengl.enable = true;
  #hardware.opengl.driSupport = true;
  #hardware.opengl.driSupport32Bit = true;
  #hardware.nvidia.modesetting.enable = true;
  #services.xserver.videoDrivers = [ "nvidia" ];
 
 #For new versions 
+hardware.graphics.enable = true;
 hardware.nvidia = {
   modesetting.enable = true;
   powerManagement.enable = true;
   open = false; 
-  package = config.boot.kernelPackages.nvidiaPackages.stable;
+  package = config.boot.kernelPackages.nvidiaPackages.beta;
   nvidiaSettings = true;
   forceFullCompositionPipeline = true;
 };
@@ -193,7 +203,7 @@ environment.sessionVariables.NVD_BACKEND = "direct";
   # Copy the NixOS configuration file and link it from the resulting system
   # (/run/current-system/configuration.nix). This is useful in case you
   # accidentally delete configuration.nix.
-   system.copySystemConfiguration = true;
+   system.copySystemConfiguration = false;
 
   # This option defines the first version of NixOS you have installed on this particular machine,
   # and is used to maintain compatibility with application data (e.g. databases) created on older NixOS versions.
