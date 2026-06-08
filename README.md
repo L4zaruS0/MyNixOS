@@ -1,5 +1,6 @@
 # MyNixOS
-My first NixOS configuration and rice
+My very first (and most favorite) NixOS configuration and rice!
+You can actually change some settings and packages in .nix files to your preferences (like comment nvidia drivers installation if you don't need them, change username, adjust disk partition size etc.) before the installation process  
 ## Installation
 Assuming that you have already booted into NixOS, you must follow next steps:
   1. Clone this rep
