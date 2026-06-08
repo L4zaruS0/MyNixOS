@@ -42,7 +42,7 @@ git add hardware-configuration.nix
 
 ## Honorable Mention
 ### My main inspirer (and my friend)
-#<a href="https://github.com/fib-nm">
+<a href="https://github.com/fib-nm">
   <img src="https://avatars.githubusercontent.com/u/120518553?v=4" width="20" height="20" alt="fib-nm profile" style="border-radius: 50%;">
   @fib-nm
 </a>
