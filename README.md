@@ -1,12 +1,15 @@
 # MyNixOS
 My very first (and most favorite) NixOS configuration and rice!
-You can actually change some settings and packages in .nix files to your preferences (like comment nvidia drivers installation if you don't need them, change username, adjust disk partition size etc.) before the installation process  
+ 
 ## Installation
 Assuming that you have already booted into NixOS, you must follow next steps:
   1. Clone this rep
 ```
 git clone https://github.com/L4zaruS0/MyNixOS.git
 ```
+
+You can actually change some settings and packages in .nix files to your preferences (smth like comment nvidia drivers installation if you don't need them, change username, adjust disk partition size etc.) before proceeding to the next steps
+
   2. Disk Partitioning
 ```
 sudo nix --experimental-features "nix-command flakes" run github:nix-community/disko/latest -- --mode disko ./disko.nix
