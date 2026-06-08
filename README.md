@@ -37,7 +37,7 @@ If you see
 
 do:
 ```
-git add hardware-configuration.nix
+git add .
 ```
 
 ## Honorable Mention
