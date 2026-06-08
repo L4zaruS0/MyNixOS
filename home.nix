@@ -1,8 +1,8 @@
 { config, pkgs, ... }:
 
 {
-  home.username = "lazar";
-  home.homeDirectory = "/home/lazar";
+  home.username = "L";
+  home.homeDirectory = "/home/L";
 
   # версия home-manager
   home.stateVersion = "24.05";
