@@ -7,7 +7,8 @@ Assuming that you have already booted into NixOS, you must follow next steps:
 git clone https://github.com/L4zaruS0/MyNixOS.git
 ```
 If you see 
->aborted: disko config must be an existing file or flake must be set>
+>aborted: disko config must be an existing file or flake must be set
+
 You can just 'cd MyNixOS' and try again
   2. Disk Partitioning
 ```
