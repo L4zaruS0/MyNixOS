@@ -42,4 +42,4 @@ git add hardware-configuration.nix
 
 ## Honorable Mention
 ### My main inspirer
-(https://avatars.githubusercontent.com/u/120518553?v=4)[@fib-nm](https://github.com/fib-nm)
+(https://avatars.githubusercontent.com/u/120518553?v=4) [@fib-nm](https://github.com/fib-nm)
