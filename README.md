@@ -50,4 +50,4 @@ git add .
   <img src="https://avatars.githubusercontent.com/u/120518553?v=4" width="20" height="20" alt="fib-nm profile" style="border-radius: 50%;">
   @fib-nm
 </a>
-He inspired me to start my Linux journey)
+inspired me to start my Linux journey)
