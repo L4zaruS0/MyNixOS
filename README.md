@@ -41,5 +41,11 @@ git add hardware-configuration.nix
 ```
 
 ## Honorable Mention
-### My main inspirer
-![avatar](https://avatars.githubusercontent.com/u/120518553?v=4) [@fib-nm](https://github.com/fib-nm)
+### My main inspirer (and my friend)
+### fib-nm
+<a href="https://github.com/fib-nm">
+  <img src="https://avatars.githubusercontent.com/u/120518553?v=4" width="40" height="40" alt="octocat's profile" style="border-radius: 50%;">
+  @fib-nm
+</a>
+
+![avatar](https://avatars.githubusercontent.com/u/120518553?v=4)[@fib-nm](https://github.com/fib-nm)
